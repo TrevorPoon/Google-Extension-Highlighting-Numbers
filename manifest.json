@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Number Highlighter",
+    "version": "1.0",
+    "description": "Highlights numbers in HTML",
+    "permissions": ["tabs", "activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
